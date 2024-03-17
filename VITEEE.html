@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITEEE Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #40513B;
+            color: #609966;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #EDF1D6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #40513B;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800 ;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #609966;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #9DC08B;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #40513B;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>VITEEE Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Basic Information:</legend>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Academic Information:</legend>
+            <label for="hscBoard">HSC Board:</label><br>
+            <select id="hscBoard" name="hscBoard" required>
+                <option value="">Select</option>
+                <option value="State Board">State Board</option>
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="Other">Other</option>
+            </select><br>
+            
+            <label for="hscPercentage">HSC Percentage:</label><br>
+            <input type="number" id="hscPercentage" name="hscPercentage" min="0" max="100" step="0.01" required><br>
+            
+            <label for="hscYear">HSC Passing Year:</label><br>
+            <input type="number" id="hscYear" name="hscYear" min="1900" max="2100" required><br>
+            
+            <label for="jeeScore">JEE Main Score:</label><br>
+            <input type="number" id="jeeScore" name="jeeScore" required><br>
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
